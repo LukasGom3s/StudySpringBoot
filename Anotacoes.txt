@@ -1,0 +1,17 @@
+**Explicação das Pastas e Arquivos Iniciais**
+.mvn  - dependências mantidas e baixadas pelo maven.
+src - onde fica diretamente nosso código, testes e configurações.
+target - é onde fica o build da aplicação, onde o nosso código é transformado em um artefato que pode ser executado pelo computador.
+
+.gitignore - onde fica as pastas que não serão trackeada para o git.
+HELP.md - onde fica as documentações das dependências e bibliotecas do projeto. É bem interessante ler.
+
+mvnw/mvnw.cmd - onde fica as configurações do maven.
+
+pom.xml - onde está as dependências que nosso projeto irá utilizar.
+
+**Explicação das dependências**
+Spring Web - traz todas as anotações e bibliotecas para criar um servidor de uma api rest, com os controllers e etc.
+Spring DevTools - traz algumas ajudas para codar, como salvar o código reiniciando o servidor automaticamente.
+                  para ver as alterações.
+

@@ -1,0 +1,2 @@
+main - contém os códigos do projeto.
+test - contém o testes do projeto.

@@ -1,0 +1,5 @@
+models - onde ficará as classes dos objetos no nosso banco de dados, seja um usuário, endereço e etc
+controllers - onde ficaram os controles que receberam as requisições http, seja get, post e etc.
+services - onde ficará as regras de negócio do nosso projeto, que receberá os dados dos controllers e processará esses dados.
+repositories - onde ficará os códigos que conversaram com o banco de dados diretamente, classes e interfaces que acessarão diretamente o banco.
+config - classes de configurações do projeto.

@@ -1,0 +1,3 @@
+java - contém o código do backend propriamente dito.
+resources - contém o código do frontend, arquivos de imagens e o application.properties que tem as configurações da nossa
+            aplicação spring, como seu servidor, e configurações pro banco de dados.
