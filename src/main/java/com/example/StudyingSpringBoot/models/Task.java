@@ -29,6 +29,4 @@ public class Task {
     @Size(min = 1, max = 500)
     private String description;
 
-    @NotBlank
-    private String status;
 }
