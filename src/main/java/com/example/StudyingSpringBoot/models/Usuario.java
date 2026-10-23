@@ -1,6 +1,4 @@
 package com.example.StudyingSpringBoot.models;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
 import lombok.Setter;
@@ -10,14 +8,16 @@ import lombok.AllArgsConstructor;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 // Versão Para Banco de Dados SQL
 // Isso define que SpringBoot tem que tratar essa classe como uma tabela no banco de dados, neste caso SQL.
-@Entity
+//@Entity
 // Isso define o nome da tabela no banco de dados que essa classe vai representar, neste caso "users".
-@Table(name = "users")
+//@Table(name = "users")
 // public class UserSQL {
     
 // }
@@ -51,7 +51,7 @@ public class Usuario{
     private String senha;
     
 
-    //private List<Tarefa> tarefas = new ArrayList<Tarefas>();
+    private List<Task> tasks = new ArrayList<Task>();
 
     
 }
