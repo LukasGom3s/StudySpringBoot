@@ -50,10 +50,7 @@ public class Usuario{
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // Isso garante que a senha não será retornada em respostas JSON, apenas será aceita em requisições.
     private String senha;
     
-
     private List<Task> tasks = new ArrayList<Task>();
 
     
 }
-
-
