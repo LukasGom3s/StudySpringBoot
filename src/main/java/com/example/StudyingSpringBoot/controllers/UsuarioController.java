@@ -83,4 +83,10 @@ public class UsuarioController {
         this.usuarioService.removeTask(idUsuario, idTask);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/{idUsuario}/tasks")
+    public ResponseEntity<java.util.List<Task>> getAllTasks(@PathVariable String idUsuario) {
+        Usuario usuario = this.usuarioService.findById(idUsuario);
+        return ResponseEntity.ok().body(usuario.getTasks());
+    }
 }
